@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="450dp"
+        android:layout_height="800dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background_image" />
+
+    <ImageView
+        android:id="@+id/blackFilter"
+        android:layout_width="1000dp"
+        android:layout_height="800dp"
+        android:alpha="0.7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.526"
+        app:srcCompat="@drawable/black" />
+
+    <ImageView
+        android:id="@+id/boiledEgg"
+        android:layout_width="584dp"
+        android:layout_height="363dp"
+        android:layout_marginTop="15dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eggTypeText"
+        app:srcCompat="@drawable/boiled_egg_2" />
+
+    <Button
+        android:id="@+id/stopTimerBtn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="90dp"
+        android:background="@drawable/btn_background"
+        android:backgroundTint="@null"
+        android:fontFamily="@font/tommy_soft"
+        android:onClick="stopTimer"
+        android:text="STOP TIMER!"
+        android:textColor="#000"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/setTimerBtn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="90dp"
+        android:background="@drawable/btn_background"
+        android:backgroundTint="@null"
+        android:fontFamily="@font/tommy_soft"
+        android:onClick="setTimer"
+        android:text="SET TIMER!"
+        android:textColor="#000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/eggTypeText"
+        android:layout_width="380dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/tommy_soft"
+        android:gravity="center"
+        android:text="WHAT TYPE OF BOILED EGG DO YOU WANT?"
+        android:textColor="#FFF"
+        android:textSize="25dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn2min"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/btn_background"
+        android:fontFamily="@font/tommy_soft"
+        android:onClick="btn2minC"
+        android:text="2 Minutes"
+        android:textColor="#000000"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boiledEgg" />
+
+    <Button
+        android:id="@+id/btn4min"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_background"
+        android:fontFamily="@font/tommy_soft"
+        android:onClick="btn4minC"
+        android:text="4 Minutes"
+        android:textColor="#000000"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn2min" />
+
+    <Button
+        android:id="@+id/btn6min"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_background"
+        android:fontFamily="@font/tommy_soft"
+        android:onClick="btn6minC"
+        android:text="6 Minutes"
+        android:textColor="#000000"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn4min" />
+
+    <Button
+        android:id="@+id/btn8min"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/btn_background"
+        android:fontFamily="@font/tommy_soft"
+        android:onClick="btn8minC"
+        android:text="8 Minutes"
+        android:textColor="#000000"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boiledEgg" />
+
+    <Button
+        android:id="@+id/btn10min"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/btn_background"
+        android:fontFamily="@font/tommy_soft"
+        android:onClick="btn10minC"
+        android:text="10 Minutes"
+        android:textColor="#000000"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn8min" />
+
+    <Button
+        android:id="@+id/btn15min"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/btn_background"
+        android:fontFamily="@font/tommy_soft"
+        android:onClick="btn15minC"
+        android:text="15 Minutes"
+        android:textColor="#000000"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn10min" />
+
+    <Button
+        android:id="@+id/changeBtn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/btn_background"
+        android:fontFamily="@font/tommy_soft"
+        android:onClick="changeTimer"
+        android:text="CHANGE TIMER"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boiledEgg" />
+
+    <TextView
+        android:id="@+id/timerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/egg_font"
+        android:text="time"
+        android:textColor="#FFF"
+        android:textSize="70dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/blackFilter"
+        app:layout_constraintVertical_bias="0.39" />
+
+    <TextView
+        android:id="@+id/appNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/tommy_soft"
+        android:text="Egg Timer"
+        android:textColor="#FFF"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBarBackGround"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="450dp"
+        android:layout_height="450dp"
+        android:alpha="0.2"
+        android:indeterminate="false"
+        android:progress="100"
+        android:progressDrawable="@drawable/progress_bar_background"
+        android:thicknessRatio="0.1"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/blackFilter"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="450dp"
+        android:layout_height="450dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/circular_progress_bar"
+        android:thicknessRatio="0.1"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/blackFilter"
+        app:layout_constraintVertical_bias="0.3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
